@@ -1,0 +1,27 @@
+**Frequently Asked Questions (FAQ) Page**
+=========================================
+
+
+Answers to common questions can be asked here!
+
+
+This FAQ follows the format of listing questions and then providing detailed answers to them. It is by no means exhaustive. 
+
+NOTE: This FAQ is subject to change.
+
+
+Q & A Starts Here!
+##################
+
+
+Q: What is Sphinx used for?
+
+A: Documentation
+
+Q: What does APPA stand for?
+
+A: American Public Power Association
+
+Q: Can I make edits to a...?
+
+A: Yes. By clicking on the...

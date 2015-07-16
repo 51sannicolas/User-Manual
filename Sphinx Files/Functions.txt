@@ -82,7 +82,7 @@ Fields required in order to submit a report:
  
  In the drop down menu, select the specific substation where the outage occurred.
  
- Utilities can use their own naming conventions when naming their substations (more thoroughly described in the **Manage** section of this manual).
+ Utilities can use their own naming conventions when naming their substations (more thoroughly described in the :ref:`Manage <Manage-label>` section of this manual).
 
 **Circuit**
  Also called feeders, circuits carry power to load areas from substations. 
@@ -91,7 +91,7 @@ Fields required in order to submit a report:
  
  In the drop down menu, select the circuit on which the outage occurred.
  
- Utilities can use their own naming conventions when naming their circuits (more thoroughly described in the **Manage** section of this manual).  
+ Utilities can use their own naming conventions when naming their circuits (more thoroughly described in the :ref:`Manage <Manage-label>` section of this manual).  
  Circuits are not automatically related to substations so be sure to use a good naming convention and select the proper circuit.
 
 **Primary Cause**
@@ -141,7 +141,7 @@ Fields required in order to submit a report:
  Partial restoration is a way to note that this recorded outage is one of several related to a single restoration event.
  
  Check the box if the outage is partially restored.  
- Don’t forget to group partial restorations of outages together in the "/Events" tab.
+ Don’t forget to group partial restorations of outages together in the "\Events" tab.
 
 
 System Characteristics
@@ -152,7 +152,7 @@ Fields not required in order to submit a report (these are additional details th
 
 **Descriptive Characteristics**
 
- Describe the utility’s electrical distribution system.
+ Describe the utility's electrical distribution system.
  
  Options: Underground or Overhead
  
@@ -181,7 +181,7 @@ Fields not required in order to submit a report (these are additional details th
 
  * Primary selective
     This type of circuit uses some of the same basic components as the primary loop. 
-    Ahead of the consumer’s transformer, an automatic switch is provided, which helps to limit interruptions in the event of loss of feeder.
+    Ahead of the consumer's transformer, an automatic switch is provided, which helps to limit interruptions in the event of loss of feeder.
  
  * Secondary selective
     This system uses two transformers from two different primary feeders. 
@@ -219,7 +219,7 @@ Fields not required in order to submit a report (these are additional details th
 
  These are the key customers for which the utility wants to track service and reliability levels. 
  These customers can be referenced when creating a new outage. 
- Information on how these customers can be created can be found under the **Manage** section of this manual.
+ Information on how these customers can be created can be found under the :ref:`Manage <Manage-label>` section of this manual.
 
 
 **How was the Outage Reported?**
@@ -250,7 +250,7 @@ Work Details
 
 **Equipment**
 
- This is the actual equipment used. The list is drawn from the equipment list created in the **Manage** section.
+ This is the actual equipment used. The list is drawn from the equipment list created in the :ref:`Manage <Manage-label>` section.
 
 
 **Notes**
@@ -272,7 +272,7 @@ click on "\Create New Outage" on the top right corner of the page, which will ta
 Outages
 **************
 
-
+|
 .. image:: images/outages.jpg
 
 If you click on "\Outages" sub tab you will be taken to the listing of recorded outages for your utility. 
@@ -292,7 +292,7 @@ This page displays the following details of the listed outages: address, utility
 Events
 ************
 
-
+|
 .. image:: images/events.jpg
 
 If you click on "\Events," you will come across a page with a listing of all of the events that have been recorded for your utility. 
@@ -318,7 +318,7 @@ should appear on the top of the screen that says the modification was successful
 Export
 ************
 
-
+|
 .. image:: images/export.jpg
 
 .. image:: images/export_page.jpg
@@ -332,7 +332,7 @@ You may want to export data to perform additional analysis.
 Import
 ************
 
-
+|
 .. image:: images/import.jpg
 
 .. image:: images/import_page.jpg

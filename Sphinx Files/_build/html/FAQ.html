@@ -100,6 +100,11 @@
 </li>
 <li><a class="reference internal" href="#importing-data">Importing Data</a><ul>
 <li><a class="reference internal" href="#what-is-the-basic-information-you-need-to-import-data">What is the basic information you need to import data?</a></li>
+<li><a class="reference internal" href="#can-my-existing-data-be-easily-transferred-from-the-appa-spreadsheet-to-the-web-based-system">Can my existing data be easily transferred from the APPA spreadsheet to the web based system?</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#mail-merge-change-total-customers-field">Mail Merge - Change Total Customers Field</a><ul>
+<li><a class="reference internal" href="#how-does-the-total-customers-feature-work-exactly">How does the Total Customers Feature work exactly?</a></li>
 </ul>
 </li>
 </ul>
@@ -191,16 +196,17 @@ importing data, transmission related outages, etc.</p>
 <p><a class="reference internal" href="#importing-data">Importing Data</a></p>
 <ul class="simple">
 <li><a class="reference internal" href="#what-is-the-basic-information-you-need-to-import-data">What is the basic information you need to import data?</a></li>
+<li><a class="reference internal" href="#can-my-existing-data-be-easily-transferred-from-the-appa-spreadsheet-to-the-web-based-system">Can my existing data be easily transferred from the APPA spreadsheet to the web based system?</a></li>
 </ul>
-<p><a href="#id6"><span class="problematic" id="id7">`Mail Merge - Change Total Customers Field`_</span></a></p>
-<p><a href="#id8"><span class="problematic" id="id9">`National Benchmarking`_</span></a></p>
-<p><a href="#id10"><span class="problematic" id="id11">`Old Spreadsheet Questions`_</span></a></p>
-<p><a href="#id12"><span class="problematic" id="id13">`Reporting Frequency`_</span></a></p>
-<p><a href="#id14"><span class="problematic" id="id15">`Run SAIFI short versus SAIFI long`_</span></a></p>
-<p><a href="#id16"><span class="problematic" id="id17">`Transmission Related Outages`_</span></a></p>
-<p><a href="#id18"><span class="problematic" id="id19">`API and Advanced Import Spreadsheet`_</span></a></p>
-<p><a href="#id20"><span class="problematic" id="id21">`Events where No Restoration is Possible`_</span></a></p>
-<p><a href="#id22"><span class="problematic" id="id23">`How the System Treats Zero Duration Outages`_</span></a></p>
+<p><a class="reference internal" href="#mail-merge-change-total-customers-field">Mail Merge - Change Total Customers Field</a></p>
+<p><a href="#id7"><span class="problematic" id="id8">`National Benchmarking`_</span></a></p>
+<p><a href="#id9"><span class="problematic" id="id10">`Old Spreadsheet Questions`_</span></a></p>
+<p><a href="#id11"><span class="problematic" id="id12">`Reporting Frequency`_</span></a></p>
+<p><a href="#id13"><span class="problematic" id="id14">`Run SAIFI short versus SAIFI long`_</span></a></p>
+<p><a href="#id15"><span class="problematic" id="id16">`Transmission Related Outages`_</span></a></p>
+<p><a href="#id17"><span class="problematic" id="id18">`API and Advanced Import Spreadsheet`_</span></a></p>
+<p><a href="#id19"><span class="problematic" id="id20">`Events where No Restoration is Possible`_</span></a></p>
+<p><a href="#id21"><span class="problematic" id="id22">`How the System Treats Zero Duration Outages`_</span></a></p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This FAQ is subject to change.</p>
@@ -512,6 +518,52 @@ the CSV spreadsheet to be formatted exactly like the example import spreadsheet.
 <li>Total Customers</li>
 </ul>
 </div>
+</div>
+<div class="section" id="can-my-existing-data-be-easily-transferred-from-the-appa-spreadsheet-to-the-web-based-system">
+<h3>Can my existing data be easily transferred from the APPA spreadsheet to the web based system?<a class="headerlink" href="#can-my-existing-data-be-easily-transferred-from-the-appa-spreadsheet-to-the-web-based-system" title="Permalink to this headline">¶</a></h3>
+<p>Yes of course! If you follow this link to the <a class="reference external" href="https://www.youtube.com/user/eReliabilityTracker">eReliability Tracker Youtube channel</a>, there is a
+video tutorial on importing data that shows you one of two options for importing data. The video shows the simple import process when transferring from
+the old spreadsheet to the eReliability Tracker.</p>
+<p>Another option is to use our advanced import feature, which allows the user to bulk upload a much larger set of information into the tracker from a
+CSV spreadsheet of data. This includes restoration notes, circuit type, phases impacted, etc.</p>
+</div>
+</div>
+<div class="section" id="mail-merge-change-total-customers-field">
+<h2>Mail Merge - Change Total Customers Field<a class="headerlink" href="#mail-merge-change-total-customers-field" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="how-does-the-total-customers-feature-work-exactly">
+<h3>How does the Total Customers Feature work exactly?<a class="headerlink" href="#how-does-the-total-customers-feature-work-exactly" title="Permalink to this headline">¶</a></h3>
+<p>To clarify, the <em>Total Customers Served</em> field in the outage form should be reflective of the total number of customers served by your utility at the
+time of the reported outage, <strong>not the number of customers interrupted during the outage.</strong> The issue appears to be with how the <em>total customers</em> value
+was entered on the outage entry form (please see example below) or when bulk importing data.</p>
+<p>When entering an outage, this field is auto-populated with the total number of customers your utility serves, which is based on what is entered in your
+utility information under the &#8216;Manage&#8217; tabe. If you need to make edits to this number, go to the &#8216;Manage&#8217; tabe to do so.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you are importing data, the column containing this data is now called <em>total_customers_served</em> (Column Q).</p>
+</div>
+<p>In addition, we have changed the key accounts column (Column R) - previously titled <em>customers_impacted</em> to <em>key_accounts_impacted.</em></p>
+<img alt="_images/outage_test.jpg" src="_images/outage_test.jpg" />
+<p>If this appears to be the problem on many outages for your utility, the best way to remedy this would be to export your current data, update the <em>Total
+Customers Served</em> or <em>Total Customers</em> field, delete everything currently in eRT, and then import the revised data.</p>
+<p>Below are steps outlining how to remove what&#8217;s currently in eRT and replacing it with a new bulk set of data.</p>
+<p>To correct the information:</p>
+<ol class="arabic simple">
+<li>Login to the <a class="reference external" href="http://reliability.publicpower.org/">eReliability Tracker</a></li>
+<li>Go to the &#8220;Outages&#8221; tab</li>
+<li>Select the first outage identified above by using the &#8220;search&#8221; field</li>
+<li>On the outage form, under &#8216;Miscellaneous Details - Total Customers&#8217; verify that the &#8220;Total Customers&#8221; field is equivalent to the total number
+of customers served by the utility at the time of that outage (<strong>NOT</strong> the number of customers impacted by the outage)</li>
+<li>Scroll to the bottom and click &#8216;Update Outage&#8217;</li>
+<li>Repeat the process for each reported outage identified above</li>
+</ol>
+<p>To delete a set of outages and re-import via spreadsheet:</p>
+<ol class="arabic simple">
+<li>Login to the <a class="reference external" href="http://reliability.publicpower.org/">eReliability Tracker</a></li>
+<li>Go to the &#8216;Outages&#8217; tab</li>
+<li>Select all of the outages you wish to delete</li>
+<li>Select the &#8220;Bulk Actions Menu&#8221; and select to delete all checked outages</li>
+<li>Once the erroneous outages have been removed, use the import feature to re-upload your data into the tracker</li>
+</ol>
 </div>
 </div>
 </div>

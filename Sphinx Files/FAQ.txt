@@ -63,6 +63,8 @@ Contents:
 
 - `What is the basic information you need to import data?`_
 
+- `Can my existing data be easily transferred from the APPA spreadsheet to the web based system?`_
+
 `Mail Merge - Change Total Customers Field`_
 
 `National Benchmarking`_
@@ -486,4 +488,72 @@ When importing outages, the **field for cause MUST match up with one of the caus
 
 	* Total Customers
 
-	   
+
+Can my existing data be easily transferred from the APPA spreadsheet to the web based system?
+*********************************************************************************************
+
+Yes of course! If you follow this link to the `eReliability Tracker Youtube channel <https://www.youtube.com/user/eReliabilityTracker>`_, there is a
+video tutorial on importing data that shows you one of two options for importing data. The video shows the simple import process when transferring from
+the old spreadsheet to the eReliability Tracker.
+
+Another option is to use our advanced import feature, which allows the user to bulk upload a much larger set of information into the tracker from a
+CSV spreadsheet of data. This includes restoration notes, circuit type, phases impacted, etc.
+
+
+
+Mail Merge - Change Total Customers Field
+#########################################
+
+
+
+How does the Total Customers Feature work exactly?
+**************************************************
+
+To clarify, the *Total Customers Served* field in the outage form should be reflective of the total number of customers served by your utility at the
+time of the reported outage, **not the number of customers interrupted during the outage.** The issue appears to be with how the *total customers* value
+was entered on the outage entry form (please see example below) or when bulk importing data.
+
+When entering an outage, this field is auto-populated with the total number of customers your utility serves, which is based on what is entered in your
+utility information under the 'Manage' tabe. If you need to make edits to this number, go to the 'Manage' tabe to do so.
+
+.. note:: If you are importing data, the column containing this data is now called *total_customers_served* (Column Q).
+
+In addition, we have changed the key accounts column (Column R) - previously titled *customers_impacted* to *key_accounts_impacted.*
+
+.. image:: FAQ_pics/outage_test.jpg
+
+If this appears to be the problem on many outages for your utility, the best way to remedy this would be to export your current data, update the *Total 
+Customers Served* or *Total Customers* field, delete everything currently in eRT, and then import the revised data.
+
+Below are steps outlining how to remove what's currently in eRT and replacing it with a new bulk set of data.
+
+
+To correct the information:
+
+1. Login to the `eReliability Tracker <http://reliability.publicpower.org/>`_
+
+2. Go to the "\Outages" tab
+
+3. Select the first outage identified above by using the "\search" field
+
+4. On the outage form, under 'Miscellaneous Details - Total Customers' verify that the "\Total Customers" field is equivalent to the total number
+   of customers served by the utility at the time of that outage (**NOT** the number of customers impacted by the outage)
+
+5. Scroll to the bottom and click 'Update Outage'
+
+6. Repeat the process for each reported outage identified above 
+
+
+To delete a set of outages and re-import via spreadsheet:
+
+1. Login to the `eReliability Tracker <http://reliability.publicpower.org/>`_
+
+2. Go to the 'Outages' tab
+
+3. Select all of the outages you wish to delete
+
+4. Select the "\Bulk Actions Menu" and select to delete all checked outages
+
+5. Once the erroneous outages have been removed, use the import feature to re-upload your data into the tracker
+
+
